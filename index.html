@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KRD HANDY — рабочие и мастера в Краснодаре</title>
+  <meta name="description" content="KRD HANDY — быстрый способ найти проверенного исполнителя на разовую работу в Краснодаре. Публикация заявки бесплатна, контакты скрыты до подтверждения сделки.">
+  <meta name="theme-color" content="#0b1220">
+  <meta property="og:title" content="KRD HANDY — исполнитель на разовую работу в Краснодаре">
+  <meta property="og:description" content="Заявка за 2 минуты. Отклики сразу. Контакты — только после «Беру заказ».">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://glebulllek.github.io/krdhandy_site/">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Service","name":"KRD HANDY",
+   "areaServed":"Краснодар","description":"Подбор исполнителей на разовую работу через Telegram-бота",
+   "url":"https://glebulllek.github.io/krdhandy_site/","telephone":null,
+   "provider":{"@type":"Organization","name":"KRD HANDY"}}
+  </script>
+  <style>
+    :root{
+      --bg:#0b1220; --surface:#111c2f; --surface2:#17253d;
+      --text:#eef4ff; --muted:#9fb1cc; --accent:#6ee7b7; --accent2:#60a5fa;
+      --warn:#fbbf24; --radius:20px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+      color:var(--text);background:
+      radial-gradient(900px 500px at 80% -10%,rgba(96,165,250,.22),transparent 60%),
+      radial-gradient(700px 420px at 10% 20%,rgba(110,231,183,.14),transparent 60%),
+      var(--bg)}
+    a{color:inherit}
+    .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+    .logo{font-weight:800;letter-spacing:.5px;font-size:20px}
+    .logo b{color:var(--accent)}
+    nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-size:14px}
+    nav a:hover{color:var(--text)}
+    .hero{padding:64px 0 42px}
+    .badge{display:inline-flex;gap:8px;align-items:center;padding:8px 14px;border-radius:999px;
+      background:rgba(110,231,183,.1);border:1px solid rgba(110,231,183,.28);
+      color:var(--accent);font-size:13px;font-weight:700}
+    h1{font-size:clamp(34px,6vw,64px);line-height:1.05;margin:18px 0 16px;max-width:820px}
+    h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));
+      -webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{max-width:680px;color:var(--muted);font-size:clamp(16px,2.2vw,20px);margin:0 0 28px}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
+      padding:14px 22px;border-radius:14px;text-decoration:none;font-weight:800;
+      transition:transform .15s ease,box-shadow .15s ease;border:1px solid transparent}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:linear-gradient(135deg,var(--accent),#34d399);color:#06231a;
+      box-shadow:0 12px 30px rgba(110,231,183,.22)}
+    .btn-secondary{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12)}
+    .btn-ghost{background:transparent;border-color:rgba(255,255,255,.14);color:var(--muted)}
+    .trust{display:flex;flex-wrap:wrap;gap:18px;margin-top:26px;color:var(--muted);font-size:14px}
+    .trust div{display:flex;gap:8px;align-items:center}
+    .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px rgba(110,231,183,.12)}
+    section{padding:56px 0;border-top:1px solid rgba(255,255,255,.06)}
+    h2{font-size:clamp(26px,4vw,40px);line-height:1.15;margin:0 0 12px}
+    .sub{color:var(--muted);max-width:640px;margin:0 0 28px}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+    .card{background:linear-gradient(160deg,var(--surface),var(--surface2));
+      border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:24px}
+    .card .num{font-size:13px;font-weight:800;color:var(--accent);letter-spacing:1px}
+    .card h3{margin:10px 0 8px;font-size:19px}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+    .price{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:center}
+    .big{font-size:clamp(40px,7vw,72px);font-weight:900;letter-spacing:-2px;line-height:1}
+    .big small{font-size:18px;font-weight:600;letter-spacing:0;color:var(--muted)}
+    .pill{display:inline-block;padding:6px 12px;border-radius:999px;background:rgba(251,191,36,.12);
+      color:var(--warn);font-size:13px;font-weight:700;margin:10px 0}
+    details{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
+      border-radius:14px;padding:14px 18px;margin-bottom:10px}
+    summary{cursor:pointer;font-weight:700}
+    details p{color:var(--muted);margin:10px 0 0;font-size:14px}
+    footer{padding:34px 0 60px;color:var(--muted);font-size:14px;
+      border-top:1px solid rgba(255,255,255,.06)}
+    .footer-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between}
+    code{background:rgba(255,255,255,.08);padding:2px 6px;border-radius:6px;font-size:13px}
+    @media(max-width:700px){
+      .price{grid-template-columns:1fr}
+      nav{display:none}
+      .hero{padding-top:34px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">KRD <b>HANDY</b></div>
+      <nav>
+        <a href="#how">Как это работает</a>
+        <a href="#price">Цена</a>
+        <a href="#trust">Безопасность</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="badge">⚡ Краснодар · только разовая работа</div>
+      <h1>Найдите <span>исполнителя</span> за пару минут</h1>
+      <p class="lead">Грузчики, разнорабочие, строительство и мелкий ремонт. Заявка публикуется бесплатно, отклики приходят сразу, а контакты открываются только после «Беру заказ».</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://t.me/krdhandy_bot?start=src_site_customer">👷 Создать заявку</a>
+        <a class="btn btn-secondary" href="https://t.me/krdhandy_bot?start=src_site_worker">🛠 Найти работу</a>
+        <a class="btn btn-ghost" href="https://t.me/krdhandy_orders">📋 Лента заявок</a>
+      </div>
+      <div class="trust">
+        <div><span class="dot"></span>Публикация — 0 ₽</div>
+        <div><span class="dot"></span>Первые 20 сделок — без комиссии</div>
+        <div><span class="dot"></span>Контакты скрыты до сделки</div>
+      </div>
+    </div>
+
+    <section id="how">
+      <h2>Как это работает</h2>
+      <p class="sub">Никаких звонков и переписок «наугад». Вся координация — в боте.</p>
+      <div class="grid">
+        <div class="card"><div class="num">01</div><h3>Заявка</h3><p>Опишите задачу, город, дату и оплату. Публикация бесплатна.</p></div>
+        <div class="card"><div class="num">02</div><h3>Отклики</h3><p>Исполнители откликаются. Их анкеты, рейтинг и портфолио видны сразу.</p></div>
+        <div class="card"><div class="num">03</div><h3>«Беру заказ»</h3><p>Вы выбираете исполнителя, он подтверждает сделку — только затем открываются адрес и контакты.</p></div>
+        <div class="card"><div class="num">04</div><h3>Готово</h3><p>Работа выполнена, заказчик подтверждает. Есть спор — жалоба останавливает автоподтверждение.</p></div>
+      </div>
+    </section>
+
+    <section id="price">
+      <div class="price">
+        <div>
+          <h2>Честная цена</h2>
+          <p class="sub">Деньги за работу исполнитель получает напрямую от заказчика. Платформа берёт комиссию только за подтверждённую сделку.</p>
+          <div class="pill">Публикация заявки — всегда бесплатно</div>
+        </div>
+        <div class="card">
+          <div class="big">10% <small>комиссия</small></div>
+          <p style="color:var(--muted);margin:14px 0 0">Удерживается после «Беру заказ», не раньше. Кнопка «Сколько я заплачу?» показывает сумму заранее.</p>
+          <p style="margin:14px 0 0"><b>Первые 20 сделок исполнителя — 0 ₽.</b></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="trust">
+      <h2>Безопас вместо «договорились в чате»</h2>
+      <p class="sub">Мы специально не показываем телефоны и точные адреса в ленте — это снижает риск схем и споров.</p>
+      <div class="grid">
+        <div class="card"><h3>🔒 Закрытые контакты</h3><p>Адрес и ссылка на собеседника приходят после подтверждения сделки.</p></div>
+        <div class="card"><h3>🛡 Профиль доверия</h3><p>Рейтинг, число сделок, подтверждённый телефон и портфолио.</p></div>
+        <div class="card"><h3>⏱ 72 часа</h3><p>Нет ответа заказчика — сделка подтвердится сама. Жалоба останавливает авто.</p></div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>Частые вопросы</h2>
+      <details open><summary>Сколько стоит разместить заявку?</summary><p>Ничего. Публикация бесплатна для заказчика всегда.</p></details>
+      <details><summary>Когда платит исполнитель?</summary><p>Только после осознанного «Беру заказ». Первые 20 сделок — без комиссии.</p></details>
+      <details><summary>Почему не видны телефоны?</summary><p>Контакты и точный адрес открываются обеим сторонам после подтверждения сделки — так сервис остаётся честным.</p></details>
+      <details><summary>Что если работа не выполнена?</summary><p>Заказчик может подать жалобу. Автоподтверждение приостанавливается, спор разбирает администратор.</p></details>
+    </section>
+
+    <footer>
+      <div class="footer-row">
+        <div><b>KRD HANDY</b> · подбор исполнителей в Краснодаре</div>
+        <div><a href="https://t.me/krdhandy_bot">Бот</a> · <a href="https://t.me/krdhandy_orders">Заявки</a> · <a href="https://t.me/krdhandy">Новости</a></div>
+      </div>
+      <p style="margin-top:14px">Переходы из этой страницы помечаются источником <code>site</code> — это нужно, чтобы видеть, работает ли лендинг.</p>
+    </footer>
+  </div>
+</body>
+</html>
