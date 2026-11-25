@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://glebulllek.github.io/krdhandy_site/sitemap.xml
