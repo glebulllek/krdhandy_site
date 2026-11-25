@@ -70,6 +70,9 @@
     .big small{font-size:18px;font-weight:600;letter-spacing:0;color:var(--muted)}
     .pill{display:inline-block;padding:6px 12px;border-radius:999px;background:rgba(251,191,36,.12);
       color:var(--warn);font-size:13px;font-weight:700;margin:10px 0}
+    .demo-link{display:inline-block;margin-top:14px;text-decoration:none;font-weight:800;
+      color:var(--accent);font-size:14px}
+    .demo-link:hover{text-decoration:underline}
     details{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
       border-radius:14px;padding:14px 18px;margin-bottom:10px}
     summary{cursor:pointer;font-weight:700}
@@ -91,6 +94,7 @@
       <div class="logo">KRD <b>HANDY</b></div>
       <nav>
         <a href="#how">Как это работает</a>
+        <a href="#demo">Демо</a>
         <a href="#price">Цена</a>
         <a href="#trust">Безопасность</a>
         <a href="#faq">FAQ</a>
@@ -124,6 +128,17 @@
       </div>
     </section>
 
+    <section id="demo">
+      <h2>Посмотрите демо-заявку</h2>
+      <p class="sub">Выберите категорию — бот покажет пример реальной заявки и предложит создать свою. Демо не публикуется в ленту и никого не беспокоит.</p>
+      <div class="grid">
+        <div class="card"><h3>🚚 Грузчик</h3><p>Разгрузка фуры, 3-й этаж, лифт есть. Пример бюджета — 2000 ₽.</p><a class="demo-link" href="https://t.me/krdhandy_bot?start=demo_loader">Открыть демо →</a></div>
+        <div class="card"><h3>🛠 Разнорабочий</h3><p>Собрать шкаф и повесить полку. Пример бюджета — 2500 ₽.</p><a class="demo-link" href="https://t.me/krdhandy_bot?start=demo_handyman">Открыть демо →</a></div>
+        <div class="card"><h3>🔨 Строительные работы</h3><p>Мелкий ремонт: шпаклевка и покраска комнаты. Пример бюджета — 4000 ₽.</p><a class="demo-link" href="https://t.me/krdhandy_bot?start=demo_construction">Открыть демо →</a></div>
+        <div class="card"><h3>🧩 Другое</h3><p>Разовая помощь по хозяйству. Пример бюджета — 1500 ₽.</p><a class="demo-link" href="https://t.me/krdhandy_bot?start=demo_other">Открыть демо →</a></div>
+      </div>
+    </section>
+
     <section id="price">
       <div class="price">
         <div>
@@ -140,7 +155,7 @@
     </section>
 
     <section id="trust">
-      <h2>Безопас вместо «договорились в чате»</h2>
+      <h2>Безопасность вместо «договорились в чате»</h2>
       <p class="sub">Мы специально не показываем телефоны и точные адреса в ленте — это снижает риск схем и споров.</p>
       <div class="grid">
         <div class="card"><h3>🔒 Закрытые контакты</h3><p>Адрес и ссылка на собеседника приходят после подтверждения сделки.</p></div>
